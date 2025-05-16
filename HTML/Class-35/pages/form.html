@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form</title>
+    </head>
+    <body>
+        <div>
+            <form action="" method="post">
+                <h1>Form Assignment</h1>
+
+                <label for="name">Readonly Input:</label>
+                <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    value="read-only value"
+                    readonly
+                /><br />
+
+                <label for="fname">Disabled input:</label
+                ><input
+                    type="text"
+                    name="fname"
+                    id="fname"
+                    value="can't edit this"
+                    disabled
+                /><br />
+                <label for="lname">spellcheck input:</label>
+                <input
+                    type="text"
+                    name="lname"
+                    id="lname"
+                    value="Writh with spellcheck"
+                    spellcheck="true"
+                /><br />
+                <label for="user">Maxlength input:</label
+                ><input
+                    type="text"
+                    name="user"
+                    id="user"
+                    value="Max 20 chars"
+                    disabled
+                /><br />
+                <input type="submit" value="Submit" />
+            </form>
+        </div>
+    </body>
+</html>

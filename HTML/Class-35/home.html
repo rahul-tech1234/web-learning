@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Class 35</title>
+    </head>
+    <body>
+        <div>
+            <h1>Welcome to Our Website</h1>
+            <div>
+                <ul>
+                    <li><a href="pages/about.html">About</a></li>
+                    <li><a href="pages/gallery.html">Gallery</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                    <li><a href="pages/form.html">Form</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Introduction</h2>
+                <p>
+                    Thi is a <strong>demp website</strong> designed for
+                    students. You can learn <em>HTML concepts</em> step bu step.
+                    Improtant notes are <mark>highlighted</mark>,and
+                    <strong>key terms are emphasized</strong>.Somechanges
+                    <del>are removed</del> while others <u>are inserted</u>
+                </p>
+            </div>
+            <div>
+                <h2>Topics Table</h2>
+                <table border="1">
+                    <tr>
+                        <th colspan="2">Topics Covered</th>
+
+                        <th>Additional Notes</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">HTML Basics</td>
+                        <td>Tags</td>
+                        <td rowspan="2">Core concepts</td>
+                    </tr>
+                    <tr>
+                        <td>Attributes</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Keep Practicing!</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <h3>Responsive Image</h3>
+                <picture>
+                    <source
+                        srcset="
+                            assets/home/mobile-home.avif,
+                            assets/home/mobile-home.webp,
+                            assets/home/mobile-home.jpeg
+                        "
+                        media="(max-width :500px)"
+                    />
+                    <source
+                        srcset="
+                            assets/home/tab-home.avif,
+                            assets/home/tab-home.avif
+                        "
+                        media="(max-width :850px)"
+                    />
+                    <source
+                        srcset="
+                            assets/home/laptop-home.webp,
+                            assets/home/laptop-home.avif,
+                            assets/home/laptop-home.jpeg
+                        "
+                        media="(max-width :1200px)"
+                    />
+
+                    <img src="assets/home/tablet.webp" alt="img" width="50%" />
+                </picture>
+            </div>
+            <div>
+                <h3>Feedback Form</h3>
+                <form action="" method="post">
+                    <fieldset>
+                        <legend>Your Feedback</legend>
+                        <p>
+                            <label for="fname">Name:</label>
+                            <input
+                                type="text"
+                                name="fname"
+                                id="fname"
+                                spellcheck="true"
+                            />
+                        </p>
+                        <p>
+                            <label for="password">Password:</label>
+                            <input
+                                type="password"
+                                name="password"
+                                id="password"
+                            />
+                        </p>
+                    </fieldset><p>
+                    <input type="submit" value="Submit" /></p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

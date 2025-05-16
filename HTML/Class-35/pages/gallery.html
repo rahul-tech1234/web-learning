@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gallery</title>
+    </head>
+    <body>
+        <div>
+            <h1>Galery</h1>
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="form.html">Form</a></li>
+            </ul>
+            <caption>
+                Gallery Images
+            </caption>
+            <picture>
+                <source
+                    srcset="../assets/gallery/mobile-gallery.avif"
+                    media="(max-width :500px)"
+                />
+                <source
+                    srcset="
+                        ../assets/gallery/tab-contact.avif,
+                        ../assets/gallery/tab-contact.webp
+                    "
+                    media="(max-width :800px"
+                />
+                <source
+                    srcset="
+                        ../assets/gallery/laptop-contact.avif,
+                        ../assets/gallery/laptop-contact.avif
+                    "
+                    media="(max-width :1000px)"
+                />
+                <img src="../assets/gallery/lap-main.webp" alt="" />
+            </picture>
+            <picture>
+                <source
+                    srcset="
+                        ../assets/gallery/laptop-3.avif,
+                        ../assets/gallery/laptop-3.webp,
+                        ../assets/gallery/laptop-3.jpeg
+                    "
+                    media=" (max-width :800px) ;(min-width :600px)"
+                />
+                <img src="../assets/gallery/tab-main.webp" alt="image" />
+            </picture>
+            <picture>
+                <source
+                    srcset="
+                        ../assets/gallery/laptop-2.avif,
+                        ../assets/gallery/laptop-2.webp,
+                        ../assets/gallery/laptop-2.jpeg
+                    "
+                    media="(max-width :1000px)"
+                />
+                <img src="../assets/gallery/laptop-4.jpeg" alt="img-area" />
+            </picture>
+            <div>
+                <h2>Feedback Form</h2>
+                <fieldset>
+                    <legend>Gallery Feedback</legend>
+                    <p>
+                        <label for="fname">Name:</label
+                        ><input type="text" name="fname" id="fname" />
+                    </p>
+                    <p>
+                        <label for="password">Password:</label
+                        ><input type="password" name="password" id="password" />
+                    </p>
+                </fieldset>
+                <p><button type="submit">Submit</button></p>
+            </div>
+        </div>
+    </body>
+</html>

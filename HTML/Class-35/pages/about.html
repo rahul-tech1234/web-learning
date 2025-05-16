@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About-Us</title>
+    </head>
+    <body>
+        <div>
+            <h1>About Us</h1>
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="form.html">Form</a></li>
+            </ul>
+            <div>
+                <h2>Our Mission</h2>
+                <p>
+                    We aim to provide <strong>quality education</strong> in
+                    <em>web devolopment.</em> Our tutorials are
+                    <mark>easy to follow</mark>and
+                    <strong>structured for learning.</strong>
+                </p>
+                <picture>
+                    <h3>Team Image</h3>
+                    <source
+                        srcset="
+                            ../assets/about/mobile-about.avif,
+                            ../assets/about/mobile-about.webp,
+                            ../assets/about/mobile-about.jpeg
+                        "
+                        media="(max-width :550px)" />
+                    <source
+                        srcset="
+                            ../assets/about/tab-about.avif,
+                            ../assets/about/tab-about.webp,
+                            ../assets/about/tab-about.jpeg
+                        "
+                        media="(max-width :850px)" />
+                    <source
+                        srcset="
+                            ../assets/about/laptop-about.avif,
+                            ../assets/about/laptop-about.jpeg
+                        "
+                        media="(max-width :1250px)" />
+
+                    <img src="../assets/home/laptop-home.jpeg" alt="images"
+                /></picture>
+            </div>
+            <div>
+                <form action="" method="post">
+                    <h2>Feedback Form</h2>
+                    <fieldset>
+                        <legend>About Feedback</legend>
+                        <p>
+                            <label for="name">Name:</label
+                            ><input
+                                type="text"
+                                name="name"
+                                id="name"
+                                spellcheck="true"
+                            />
+                        </p>
+                        <p>
+                            <label for="password">Password:</label>
+                            <input
+                                type="password"
+                                name="password"
+                                id="password"
+                            />
+                        </p>
+                    </fieldset>
+                    <p><input type="submit" value="Submit" /></p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
