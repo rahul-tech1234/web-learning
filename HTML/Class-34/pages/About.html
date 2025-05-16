@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About Us</title>
+    </head>
+    <body>
+        <div>
+            <h1>Abour Us</h1>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/Contact.html">Gallery</a></li>
+                <li><a href="../pages/Galerry.html">Contact</a></li>
+                <li><a href="#">Form</a></li>
+            </ul>
+            <h2>Our Mission</h2>
+            <p>
+                We aim to provide <strong>quality education</strong> in
+                <em>web devolopment</em>.Our tutorials are
+                <mark>easy to follow</mark> and
+                <strong>structured for learning</strong>
+            </p>
+            <h2>Team image</h2>
+            <figure>
+                <picture>
+                    <source
+                        srcset="
+                            ../assets/form-images/phone/child.avif,
+                            ../assets/form-images/phone/child.webp,
+                            ../assets/form-images/phone/child.jpg
+                        "
+                        media="(max-width :550px)"
+                    />
+                    <source
+                        srcset="
+                            ../assets/form-images/tablet/freedom.avif,
+                            ../assets/form-images/tablet/freedom.webp,
+                            ../assets/form-images/tablet/freedom.jpg
+                        "
+                        media="(max-width :900px)"
+                    />
+                    <source
+                        srcset="
+                            ../assets/form-images/laptop/nature.avif,
+                            ../assets/form-images/laptop/nature.webp,
+                            ../assets/form-images/laptop/nature.jpg
+                        "
+                        media="(min-width :1200px)"
+                    />
+                    <img
+                        src="../assets/form-images/laptop/nature.jpg"
+                        alt="img"
+                    />
+                </picture>
+            </figure>
+            <form action="#" mathod="post">
+                <h2>Feedback Form</h2>
+                <fieldset>
+                    <legend>About Feedback</legend>
+                    <p>
+                        <label for="f-name">Name:</label
+                        ><input type="text" name="f-name" id="f-name" />
+                        <input
+                            type="hidden"
+                            name="first-name"
+                            value="given-name"
+                        />
+                    </p>
+                    <p>
+                        <label for="passwprd">Password:</label
+                        ><input type="password" name="password" id="password" />
+                    </p>
+                    <input
+                        type="hidden"
+                        name="token"
+                        id="token"
+                        value="password"
+                    />
+                </fieldset>
+                <p>
+                    <input type="submit" value="submit" />
+                </p>
+            </form>
+        </div>
+    </body>
+</html>

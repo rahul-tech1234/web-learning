@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Class 34</title>
+    </head>
+    <body>
+        <div>
+            <h1>Welcome to Our Website</h1>
+            <ul>
+                <li><a href="pages/About.html">About</a></li>
+                <li><a href="pages/Galerry.html">Gallery</a></li>
+                <li><a href="pages/Contact.html">Contact</a></li>
+                <li><a href="#">Form</a></li>
+            </ul>
+            <h2>Introduction</h2>
+
+            <p>
+                This is a <strong>demo website</strong> designed for students.
+                You can learn <em>HTML concepts</em> step by step. Important
+                notes are <mark>highlighted</mark>, and
+                <storng>key terms are emphasized</storng>. Some changes
+                <del>are removed</del> while others <u>are inserted.</u>
+            </p>
+            <table border="1">
+                <h2>Topics Table</h2>
+                <tr>
+                    <th colspan="2">Topics Covered</th>
+                    <th>Additional Notes</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">HTML Basics</td>
+                    <td>Tags</td>
+                    <td rowspan="2">Core concepts</td>
+                </tr>
+                <tr>
+                    <td>Attributes</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Keep Practicing!</td>
+                </tr>
+            </table>
+
+            <h2>Responsive Image</h2>
+            <figure>
+                <picture>
+                    <source
+                        srcset="
+                            assets/home/mobile/mobile.avif,
+                            assets/home/mobile/mobile.webp,
+                            assets/home/mobile/mobile.jpg
+                        "
+                        media="(max-width :550px)"
+                    />
+
+                    <source
+                        srcset="
+                            assets/home/tablet/tablet.avif,
+                            assets/home/tablet/tablet.avif
+                        "
+                        media="(max-width :900px)"
+                    />
+                    <source
+                        srcset="
+                            assets/home/laptop/laptop.avif,
+                            assets/home/laptop/laptop.webp,
+                            assets/home/laptop/laptop.jpg
+                        "
+                        media="(max-width :1200px)"
+                    />
+                    <img src="assets/main.jpeg" alt="img" />
+                </picture>
+            </figure>
+            <h2>Feedback Form</h2>
+            <form action="#" mathod="post">
+                <fieldset>
+                    <legend>Your Feedback</legend>
+                    <p>
+                        <label for="f-name">Name</label>
+                        <input type="text" name="name" id="f-name" />
+                        <input type="hidden" name="name" value="das" />
+                    </p>
+                    <p>
+                        <label for="password">password</label>
+                        <input
+                            type="password"
+                            name="password"
+                            value="password"
+                        />
+                        <input type="hidden" name="password" value="password" />
+                    </p>
+                </fieldset>
+                <p><input type="submit" value="Submit" /></p>
+            </form>
+        </div>
+    </body>
+</html>
