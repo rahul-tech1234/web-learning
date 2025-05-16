@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Class 31</title>
+    </head>
+    <body>
+        <div>
+            <picture>
+                <source
+                    srcset="
+                        assets/images/phone/child.avif 1x,
+                        assets/images/phone/child.webp 1.5x,
+                        assets/images/phone/child.jpg  2x
+                    "
+                    media="(max-width: 500px)"
+                />
+
+                <source
+                    srcset="
+                        assets/images/tablet/freedom.avif 1x,
+                        assets/images/tablet/freedom.webp 1.5x,
+                        assets/images/tablet/freedom.jpg  2x
+                    "
+                    media="(max-width:900px)"
+                />
+
+                <source
+                    srcset="
+                            assets/images/laptop/nature.avif 1,
+                            assets/images/laptop/nature.webp 1.5,
+                            assets/images/laptop/nature.jpg  2x
+                        "
+                    media="(max-width:1200px)"
+                />
+
+                <img src="assets/images/main-img.jpg" alt="img" width="400" />
+                <figcaption>"Healthy food makes you feel good"</figcaption>
+            </picture>
+        </div>
+    </body>
+</html>
