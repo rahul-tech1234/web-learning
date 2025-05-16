@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gallery</title>
+    </head>
+    <body>
+        <h2>Gallery</h2>
+        <p>here are some of the projects jhon has worked on:</p>
+        <img src="../assets/projct-1.avif" alt="projct-1" />
+        <figcaption>Project 1: E-commerce Website</figcaption>
+        <img src="../assets/project-2.avif" alt="projct-2" />
+        <figcaption>Project 2:blogging platform</figcaption>
+        <h2>Responsive Image Example</h2>
+        <picture>
+            <source
+                srcset="
+                    ../assets/form-images/phone/child.avif,
+                    ../assets/form-images/phone/child.webp,
+                    ../assets/form-images/phone/child.jpg
+                "
+                media="(max-width :550px)"
+            />
+            <source
+                srcset="
+                    ../assets/mobile/mobile.avif,
+                    ../assets/mobile/mobile.webp,
+                    ../assets/mobile/mobile.png
+                "
+                media="(max-width :850px)"
+            />
+            <source srcset="../assets/main.avif, ../assets/main.webp,
+            ../assets/main.jpeg, media="(min-width :850px)" />
+            <img src="../assets/main.avif" alt="" />
+        </picture>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </body>
+</html>

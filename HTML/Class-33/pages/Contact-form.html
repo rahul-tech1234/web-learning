@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact form</title>
+    </head>
+    <body>
+        <div>
+            <h1>Contact form</h1>
+            <h2>form banner</h2>
+            <picture>
+                <source
+                    srcset="
+                        ../assets/form-images/phone/child.avif,
+                        ../assets/form-images/phone/child.webp,
+                        ../assets/form-images/phone/child.jpg
+                    "
+                    media="(max-width :600px)"
+                />
+                <source
+                    srcset="
+                        ../assets/form-images/tablet/freedom.avif,
+                        ../assets/form-images/tablet/freedom.webp,
+                        ../assets/form-images/tablet/freedom.jpg
+                    "
+                    media="(max-width :950px)"
+                />
+                <source
+                    srcset="
+                        ../assets/form-images/laptop/nature.avif,
+                        ../assets/form-images/laptop/nature.webp,
+                        ../assets/form-images/laptop/nature.jpg
+                    "
+                    media="(max-width :1000)"
+                />
+                <img src="../assets/pexels-photo-699380.jpeg" alt="img" />
+            </picture>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Info</legend>
+                    <p>
+                        <label for="fname">First Name:</label>
+                        <input type="text" name="fname" id="fname" />
+                    </p>
+                    <p>
+                        <label for="lname">Last Name:</label>
+                        <input type="text" name="lname" id="lname" />
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Message Details</legend>
+                    <label for="message">Message</label>
+                    <textarea
+                        name="message"
+                        id="message"
+                        cols="8"
+                        rows="1"
+                    ></textarea>
+                </fieldset>
+                <p><input type="submit" value="Submit" /></p>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Galerry.html">Gallery</a></li>
+                </ul>
+            </form>
+        </div>
+    </body>
+</html>

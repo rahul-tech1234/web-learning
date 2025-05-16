@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact_Us</title>
+    </head>
+    <body>
+        <h3>Responsive Contact Banner</h3>
+        <picture>
+            <source
+                srcset="
+                    ../assets/images/mobile.avif,
+                    ../assets/images/mobile.webp,
+                    ../assets/images/mobile.jpeg
+                "
+                media="(max-width :550px)"
+            />
+            <source
+                srcset="
+                    ../assets/images/tab.avif,
+                    ../assets/images/tab.webp,
+                    ../assets/images/tab.png,
+                    ../assets/images/tab.jpeg
+                "
+                media="(max-width :900px)"
+            />
+            <source
+                srcset="
+                    ../assets/images/flag.avif,
+                    ../assets/images/flag.webp,
+                    ../assets/images/flag.png
+                "
+                media="(min-width :900px)"
+            />
+            <img src="../assets/images/flag.png" alt="img" />
+        </picture>
+        <ul>
+            <li>Email:John.doe@Example.com</li>
+            <li>Phone: +123456789</li>
+        </ul>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Galerry.html">Gallery</a></li>
+        </ul>
+    </body>
+</html>
