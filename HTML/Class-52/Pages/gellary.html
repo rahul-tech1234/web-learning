@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>gallery</title>
+    </head>
+    <body>
+        <!-- ======header area====== -->
+        <header>
+            <h1>Image & Video Gallery</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="form.html">Form</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- //======header area======// -->
+        <!-- ======main area====== -->
+        <main>
+            <!-- ======Text Area====== -->
+
+            <h2>Our Media</h2>
+            <p>
+                Here are some <mark>beautiful</mark>images and videos form
+                Picsum and Mixkit
+            </p>
+            <!-- //======Text Area======// -->
+            <!-- ======Image & Video====== -->
+            <section class="img-video">
+                <figure>
+                    <picture>
+                        <source
+                            srcset="../assets/gallery/img/01/mobile.avif"
+                            media="(max-width :600px)"
+                        />
+                        <source
+                            srcset="
+                                ../assets/gallery/img/01/tab.avif,
+                                ../assets/gallery/img/01/tab.webp,
+                                ../assets/gallery/img/01/tab.jpeg
+                            "
+                            media="(max-width :800px)"
+                        />
+                        <source
+                            srcset="
+                                ../assets/gallery/img/01/holly.avif,
+                                ../assets/gallery/img/01/holly.webp,
+                                ../assets/gallery/img/01/holly.jpeg
+                            "
+                            media="(max-width :1000px)"
+                        />
+                        <img src="../assets/gallery/img/01/holly.jpeg" alt="" />
+                    </picture>
+                    <br />
+                    <picture>
+                        <source
+                            srcset="
+                                ../assets/gallery/img/02/mobile.avif,
+                                ../assets/gallery/img/02/mobile.webp
+                            "
+                            media="(max-width :500px)"
+                        />
+                        <source
+                            srcset="
+                                ../assets/gallery/img/02/tab.avif,
+                                ../assets/gallery/img/02/tab.webp
+                            "
+                            media="(max-width :700px)"
+                        />
+                        <source
+                            srcset="
+                                ../assets/gallery/img/02/laptop.avif,
+                                ../assets/gallery/img/02/laptop.webp
+                            "
+                            media="(min-width :900px)"
+                        />
+                        <img
+                            src="../assets/gallery/img/02/laptop.jpeg"
+                            alt=""
+                        />
+                    </picture>
+                    <br />
+                    <video
+                        src="../assets/gallery/rural.mp4"
+                        controls
+                        poster=""
+                        preload="none"
+                    ></video>
+                    <figcaption>Gallery Video</figcaption>
+                </figure>
+            </section>
+            <br />
+            <!-- //======Image & Video======// -->
+            <!-- ======Image Map====== -->
+            <section class="img-map">
+                <img
+                    src="../assets/gallery/img/02/map.avif"
+                    alt=""
+                    usemap="#map"
+                />
+                <map name="map">
+                    <area
+                        target="_blank"
+                        alt="java"
+                        title="java"
+                        href="https://en.wikipedia.org/wiki/Java_(programming_language)"
+                        coords="277,187,356,144,411,243,328,292"
+                        shape="poly"
+                    />
+                    <area
+                        target="_blank"
+                        alt="earth"
+                        title="earth"
+                        href="https://en.wikipedia.org/wiki/Earth"
+                        coords="446,160,532,162,543,279,444,275"
+                        shape="poly"
+                    />
+                    <area
+                        target="_blank"
+                        alt="laptop"
+                        title="laptop"
+                        href="https://en.wikipedia.org/wiki/Laptop"
+                        coords="71,190,232,156,264,260,273,277,54,329,73,304"
+                        shape="poly"
+                    />
+                    <area
+                        target="_blank"
+                        alt="web design"
+                        title="web design"
+                        href="https://en.wikipedia.org/wiki/Web_design"
+                        coords="339,98,392,48,477,117,419,181"
+                        shape="poly"
+                    />
+                    <area
+                        target="_blank"
+                        alt="devoloper"
+                        title="devoloper"
+                        href="https://en.wikipedia.org/w/index.php?search=web+devoloper&amp;title=Special%3ASearch&amp;ns0=1"
+                        coords="254,0,282,76,254,145,207,145,161,148,103,165,78,171,20,103,8,81,4,38,4,2"
+                        shape="poly"
+                    />
+                </map>
+            </section>
+            <!-- //======Image Map======// -->
+            <!-- ======List & Media====== -->
+            <section class="list-media">
+                <h3>List of Media</h3>
+                <ol>
+                    <li><a href="https://picsum.photos/images">Image 1</a></li>
+                    <li>
+                        <a
+                            href="https://www.istockphoto.com/video/cute-baby-rabbit-flying-in-the-sky-with-rectangular-frame-between-balloons-animation-gm1195580127-340820672"
+                            >Video 1</a
+                        >
+                    </li>
+                </ol>
+                <dl>
+                    <dh
+                        >Picsum
+                        <dl>
+                            <dd>Random image genaretor</dd>
+                        </dl>
+                    </dh>
+                    <dh>
+                        Mixkit
+                        <dl>
+                            <dd>Free stock videos</dd>
+                        </dl>
+                    </dh>
+                </dl>
+                <h4>Code for media</h4>
+                <video
+                    src="../assets/gallery/video.mp4"
+                    controls
+                    preload="none"
+                ></video>
+                <p>
+                    Press <kbd>F5</kbd>. to
+                    refresh.Variable:<var>media</var>.Output:<samp>Loaded</samp>
+                </p>
+            </section>
+            <!-- //======List & MEdia======// -->
+        </main>
+        <!-- //======main area======// -->
+        <!-- ======footer area====== -->
+        <footer>
+            <h3>Media Info</h3>
+            <table border="1">
+                <tr>
+                    <th>Type</th>
+                    <th>Detail</th>
+                </tr>
+                <tr>
+                    <td>Image</td>
+                    <td>300x200</td>
+                </tr>
+                <tr>
+                    <td>Video</td>
+                    <td>300x200</td>
+                </tr>
+                <tr>
+                    <td colspan="2">End</td>
+                </tr>
+            </table>
+            <p><q> Media enhances websites</q></p>
+            <p>&#169; 2025 |<a href="../index.html">Home</a></p>
+        </footer>
+        <!-- //======footer area======// -->
+    </body>
+</html>

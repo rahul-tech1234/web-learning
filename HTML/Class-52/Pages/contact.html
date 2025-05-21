@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>contact</title>
+    </head>
+    <body>
+        <!-- header area -->
+        <header>
+            <h1>Contact Us</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gellary.html">Gallery</a></li>
+                    <li><a href="form.html">Form</a></li>
+                </ul>
+            </nav>
+            <h2>Get in Touch</h2>
+            <p>Email us at <a href="#">example@example.com.</a></p>
+            <p>Phone: <strong>+1-123-456-7890</strong></p>
+        </header>
+        <hr />
+        <!--// header area //-->
+        <!-- main area -->
+        <main>
+            <!-- ======Image&Video====== -->
+            <section class="img-video">
+                <h3>Contact Media</h3>
+                <figure>
+                    <picture>
+                        <source
+                            srcset="
+                                ../assets/contact/images/mobile.avif,
+                                ../assets/contact/images/mobile.webp,
+                                ../assets/contact/images/mobile.jpg
+                            "
+                            media="(max-width :650px)"
+                        />
+                        <source
+                            srcset="
+                                ../assets/contact/images/tab.avif,
+                                ../assets/contact/images/tab.webp,
+                                ../assets/contact/images/tab.jpg
+                            "
+                            media="(max-width :1000px)"
+                        />
+                        <source
+                            srcset="
+                                ../assets/contact/images/laptop.avif,
+                                ../assets/contact/images/laptop.webp,
+                                ../assets/contact/images/laptop.jpg
+                            "
+                            media="(min-width :1000px)"
+                        />
+                        <img src="../assets/contact/images/laptop.jpg" alt="" />
+                    </picture>
+                    <figcaption>Contact Image</figcaption>
+                </figure>
+                <figure>
+                    <video
+                        src="../assets/contact/video/7989854-sd_360_640_25fps.mp4"
+                        controls
+                        autoplay
+                        muted
+                    ></video>
+                    <figcaption>Contact Video</figcaption>
+                </figure>
+            </section>
+            <!-- //======Image&Video======// -->
+            <!-- ======Table List====== -->
+            <section class="table-list">
+                <h3>Office Hours</h3>
+                <table border="2">
+                    <tr>
+                        <th>Day</th>
+                        <th>Hours</th>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>9 AM-5PM</td>
+                    </tr>
+                </table>
+                <h3>Contact Methods</h3>
+                <ul>
+                    <li>Email</li>
+                    <li>
+                        Phone
+                        <ol>
+                            <li>Mobile</li>
+                            <li>Landline</li>
+                        </ol>
+                    </li>
+                </ul>
+                <dl>
+                    <dh
+                        >Support
+                        <dl>
+                            <dd>Contact for help</dd>
+                        </dl>
+                    </dh>
+                </dl>
+            </section>
+            <!-- //======Table List======// -->
+            <!-- ======footer area====== -->
+            <footer>
+                <h3>Code example</h3>
+                <blockquote><a href="#">Email</a></blockquote>
+                <p>
+                    Type <kbd>ctrl</kbd> + <kbd>c</kbd> to
+                    copy.Variable:<var>email</var>.Output:sent
+                </p>
+                <blockquote>Reach out anytime!</blockquote>
+                <p>&#169; 2025 | <a href="../index.html">Home</a></p>
+            </footer>
+            <!-- ======footer area====== -->
+        </main>
+        <!-- //main area// -->
+    </body>
+</html>

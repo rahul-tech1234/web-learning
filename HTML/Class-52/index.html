@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Class 52</title>
+    </head>
+    <body>
+        <!-- ========header area======== -->
+
+        <header>
+            <h1>Welcome to My Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="Pages/about.html">About</a></li>
+                    <li><a href="Pages/gellary.html">Gallery</a></li>
+                    <li><a href="Pages/contact.html">Contact</a></li>
+                    <li><a href="Pages/form.html">Form</a></li>
+                </ul>
+            </nav>
+            <h2 id="top-area">Introduction</h2>
+            <p>
+                This is the <mark>home page</mark> of the assignment. It uses
+                <strong>all HTML topics</strong> taught so far.
+            </p>
+            <p>
+                Here's a <br />
+                line break and an horizontal rule below:
+            </p>
+            <hr />
+        </header>
+        <!-- //========header area========// -->
+        <!-- =======main area======== -->
+        <main>
+            <!-- ========Section 1======== -->
+            <section class="link-area">
+                <h3>Quick Links</h3>
+                <p>Jump to: <a href="#bottom-area">Bottom of Page</a></p>
+                <p>
+                    External Links:
+                    <a href="https://www.google.com" target="blink">Google</a> |
+                    <a href="https://www.flipkart.com" target="blink"
+                        >Flipkart</a
+                    >
+                </p>
+            </section>
+            <!-- //========Section 1========// -->
+            <!-- ======Section 2====== -->
+            <section class="list">
+                <nav>
+                    <ul>
+                        <li>Unordered Item 1</li>
+                        <li>
+                            Unordered Item 2
+                            <ol>
+                                <li>Nested Orderd Item 1</li>
+                                <li>Nested Orderd Item 2</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <dl>
+                        <dh
+                            >HTML
+                            <dl>
+                                <dd>HyperText Markup Language</dd>
+                            </dl>
+                        </dh>
+                        <dh
+                            >CSS
+                            <dl>
+                                <dd>Cascading Style Sheets</dd>
+                            </dl>
+                        </dh>
+                    </dl>
+                </nav>
+            </section>
+            <!-- //======Section 2======// -->
+            <!-- ======Image&Video====== -->
+            <section class="img-video">
+                <h3>Image & Video Demo</h3>
+                <figure>
+                    <picture>
+                        <source
+                            srcset="
+                                assets/home/images/mobile.avif,
+                                assets/home/images/mobile.webp,
+                                assets/home/images/mobile.png
+                            "
+                            media="(max-width :500px)"
+                        />
+                        <source
+                            srcset="
+                                assets/home/images/tab.avif,
+                                assets/home/images/tab.webp,
+                                assets/home/images/tab.jpeg
+                            "
+                            media="(max-width :900px)"
+                        />
+                        <source
+                            srcset="
+                                assets/home/images/laptop.avif,
+                                assets/home/images/laptop.webp,
+                                assets/home/images/laptop.jpeg
+                            "
+                            media="(min-width :900px)"
+                        />
+                        <img src="assets/home/images/laptop.jpeg" alt="img" />
+                    </picture>
+                    <figcaption>Image form Picsum</figcaption>
+                </figure>
+                <figure>
+                    <video
+                        src="assets/home/video/video.mp4"
+                        controls
+                        loop
+                        poster="assets/home/images/thambel.avif"
+                        preload="none"
+                    >
+                        <source src="assets/home/video/video.ogg" type="video/ogg" />
+                        <source src="assets/home/video/video.org" type="video/org" />
+                        <source src="assets/home/video/video.mp4" type="video/mp4" />
+                    </video>
+                    <figcaption>Sample Video</figcaption>
+                </figure>
+            </section>
+            <!-- //======/Image&Video======// -->
+            <!-- ======Text====== -->
+            <section class="text">
+                <h3>Text Formating</h3>
+                <p>
+                    This is <bold>bold,</bold> <i>italic,</i>
+                    <strong>improtant,</strong>and <em>emphasize</em> text.
+                </p>
+                <p>
+                    <del>Old text</del> replaced with <u>new text</u>.
+                    h<sub>2</sub>o and x<sup>2</sup>.
+                </p>
+                <small>Small text here</small>
+            </section>
+            <!-- //======Text======// -->
+            <!-- ======Code====== -->
+            <section class="code">
+                <h3>Code Example</h3>
+                <br />
+                <p><samp>This is a paragraph</samp></p>
+                <br />
+                <pre>
+                    press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save. Variable:<var>x.</var>output:<samp>Hello</samp> 
+                </pre>
+            </section>
+            <!-- //======Code======// -->
+            <!-- ======Table====== -->
+            <section class="table">
+                <h3>Table Demo</h3>
+                <table border="2">
+                    <tr>
+                        <th>Name</th>
+                        <th colspan="2">Details</th>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Age: 25</td>
+                        <td>City: NY</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">End of Table</td>
+                    </tr>
+                </table>
+            </section>
+            <!-- //======Table======// -->
+        </main>
+        <!-- //========main area========// -->
+        <!-- =======aside area====== -->
+        <aside>
+            <h4 id="bottom-area">Aside Content</h4>
+            <p>This is a <q>short quote</q> in an aside.</p>
+            <p>&#169; 2025 My Website | <a href="#top-area">Back to Top</a></p>
+        </aside>
+        <!-- //=======aside area======// -->
+    </body>
+</html>

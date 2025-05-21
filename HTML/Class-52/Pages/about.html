@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>about</title>
+    </head>
+    <body>
+        <!-- ======header area====== -->
+        <header>
+            <h1>About This Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="gellary.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="form.html">Form</a></li>
+                </ul>
+            </nav>
+            <!-- ======Section 1====== -->
+            <section class="story">
+                <h2>Our Story</h2>
+
+                <p>
+                    We started this project with <strong>passion</strong> and
+                    <em>dedication</em>.
+                </p>
+                <blockquote>
+                    "The best way to learn is by doing."-Someone Wise
+                </blockquote>
+                <p>
+                    some text was <del>removed</del> and <u>updated</u>.See
+                    H<sub>2</sub>O and 2<sup>3</sup>
+                </p>
+            </section>
+            <!-- //======Story 1======// -->
+        </header>
+        <!-- //======header area======// -->
+        <hr />
+        <!-- ======main area====== -->
+        <main>
+            <!-- ========Section skill====== -->
+            <section class="skill">
+                <h3>Skills</h3>
+                <ul>
+                    <li>
+                        HTML
+                        <ol>
+                            <li>Structure</li>
+                            <li>Forms</li>
+                        </ol>
+                    </li>
+                    <li>CSS</li>
+                </ul>
+                <dl>
+                    <dh
+                        >Web Dev
+                        <dl>
+                            <dd>Building websites</dd>
+                        </dl>
+                    </dh>
+                </dl>
+            </section>
+            <!-- //======Section skill======// -->
+            <!-- =======Image&Video====== -->
+            <section class="media">
+                <h3>Media</h3>
+                <figure>
+                    <picture>
+                        <source
+                            srcset="
+                                ../assets/about/images/mobile.avif,
+                                ../assets/about/images/mobile.webp,
+                                ../assets/about/images/mobile.jpg
+                            "
+                            media="(max-width :600px"
+                        />
+                        <source
+                            srcset="
+                                ../assets/about/images/tab.avif,
+                                ../assets/about/images/tab.webp,
+                                ../assets/about/images/tab.jpg
+                            "
+                            media="(max-width :950px)"
+                        />
+                        <source
+                            srcset="
+                                ../assets/about/images/laptop.avif,
+                                ../assets/about/images/laptop.webp,
+                                ../assets/about/images/laptop.jpg
+                            "
+                            media="(min-width :950px)"
+                        />
+                        <img src="../assets/about/images/laptop.jpg" alt="" />
+                    </picture>
+                    <figcaption>About Us Image</figcaption>
+                </figure>
+                <figure>
+                    <video
+                        src="../assets/about/video/movie.mp4"
+                        controls
+                        autoplay
+                        muted
+                        looping
+                    >
+                        <source
+                            srcset="../assets/about/video/movie.ogg"
+                            type="video/ogg"
+                        />
+                        <source
+                            srcset="../assets/about/video/movie.org"
+                            type="video/org"
+                        />
+                        <source
+                            srcset="../assets/about/video/movie.mp4"
+                            type="video/mp4"
+                        />
+                    </video>
+                    <figcaption>
+                        About Video (Autoplay,Muted,looping)
+                    </figcaption>
+                </figure>
+            </section>
+            <!-- //=======Image&Video======// -->
+            <!-- =======Code Snap====== -->
+            <section class="code">
+                <h3>Code Snippet</h3>
+                <br />
+                <samp>Hello World</samp><br />
+                <p>
+                    Type <samp>Enter</samp>to run. Variable:
+                    <var>y</var>.Output: <samp>Done</samp>.
+                </p>
+            </section>
+            <!-- //=======Code Snap======// -->
+            <!-- Team -->
+            <h3>Team</h3>
+            <table border="2">
+                <tr>
+                    <th>Name</th>
+                    <th>Role</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">Alex</td>
+                    <td>Developer</td>
+                </tr>
+                <tr>
+                    <td>Designer</td>
+                </tr>
+            </table>
+            <!--// Team //-->
+        </main>
+        <!-- //======main area======// -->
+        <!-- Footer area -->
+        <footer>
+            <blockquote>Learning HTML is fun!</blockquote>
+            <p>&#169; 2025 | <a href="../index.html">Home</a></p>
+        </footer>
+        <!-- //Footer area// -->
+    </body>
+</html>
