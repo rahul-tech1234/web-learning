@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>about</title>
+    </head>
+    <body>
+        <div>
+            <h1>About Us</h1>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="gallery.html">Galley</a></li>
+            </ul>
+            <h2>Our Story</h2>
+            <blockquote>
+                "We started our journey with the goal of makeing web devolopment
+                accessible to everyone."
+            </blockquote>
+            <h2>Code Snippet</h2>
+            <code>
+                <pre>
+                console.log("Welcome to Web devolopment")
+                </pre>
+            </code>
+            <picture>
+                <source
+                    srcset="
+                        ../assets/city-view.webp,
+                        ../assets/city-view.jpeg,
+                        ../assets/city-view.avif
+                    "
+                    media="(max-width :800px)"
+                />
+                <source
+                    srcset="
+                        ../assets/view.avif,
+                        ../assets/city-view.webp,
+                        ../assets/city-view.jpeg
+                    "
+                    media="(max-width :800px)"
+                />
+                <img src="../assets/view.jpeg" alt="img" />
+            </picture>
+        </div>
+    </body>
+</html>

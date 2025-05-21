@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>class 47</title>
+    </head>
+    <body>
+        <div>
+            <h1>Welcome to Our Website</h1>
+            <ul>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+                <li><a href="pages/gallery.html">Gallery</a></li>
+                <li><a href="pages/form.html">Form</a></li>
+            </ul>
+            <h2 href="#paragraph">Introduction</h2>
+            <p>
+                This is a practice assignment covering all HTML topics taught so
+                far.
+            </p>
+            <h2>Code Example</h2>
+            <code>
+                <pre>
+                    function greet() { 
+                        console.log("Hello, World!");
+                    } 
+                </pre>
+            </code>
+            <h2>Keyboard Input</h2>
+            <p>To refresh the page,press <kbd>ctrl</kbd>+<kbd>R</kbd>.</p>
+            <h2>Mathematical Variables</h2>
+            <p>
+                The area of a circle is calculated as <var> πr<sup>2</sup></var>
+            </p>
+            <h2 id="paragraph">Sample Output</h2>
+            <p><Exam></Exam>ple system output:</p>
+            <samp> File uploaded successfully</samp>
+            <h2>Responsive Image</h2>
+            
+            <img src="assets/city-view.jpeg" alt="" />
+
+
+            <form action="">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <p>
+                        <label for="fname">Full Name:</label>
+                        <input
+                            type="text"
+                            name="fname"
+                            id="fname"
+                            placeholder="Enter your full name"
+                        />
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            pattern=".+@gmail.com"
+                            placeholder="Enter your email"
+                        />
+                    </p>
+                    <p>
+                        <label for="birth">Date of Birth:</label>
+                        <input type="date" name="birth" id="birth" />
+                    </p>
+
+                    <p>
+                        <label for="color">Favorite Color:</label>
+                        <input type="color" name="color" id="fcolor" />
+                    </p>
+                    <p>
+                        <label for="phone">Phone Number:</label>
+                        <input
+                            type="tel"
+                            name="phone"
+                            id="phone"
+                            pattern="[0-9]{10}"
+                            placeholder="Enter 10-digit phone number"
+                            required
+                        />
+                    </p>
+
+                    <p>
+                        <label for="web">Personal Website:</label>
+                        <input
+                            type="url"
+                            name="web"
+                            id="web"
+                            placeholder="Enter your website URL"
+                        />
+                    </p>
+
+                    <p>
+                        <label for="message">Your Comments:</label>
+                        <textarea
+                            name="feedback"
+                            id="message"
+                            cols="20"
+                            rows="10"
+                            placeholder="Write your comments...."
+                            wrap="hard"
+                        ></textarea>
+                    </p>
+
+                    <p>
+                        <label for="progress">Form Completion Progress:</label>
+                        <progress
+                            name="form-upload"
+                            id="progress"
+                            max="100"
+                            value="70"
+                        ></progress>
+                    </p>
+                    <p>
+                        <label for="meter">Satisfaction Meter:</label>
+                        <meter
+                            name="satisfaction"
+                            id="meter"
+                            value="81"
+                            min="0"
+                            max="100"
+                            low="20"
+                            high="80"
+                            optimum="81"
+                        ></meter>
+                    </p>
+                </fieldset>
+                <p>
+                    <button
+                        type="submit"
+                        name="submit"
+                        id="submit"
+                        value="compleate"
+                    >
+                        Submit
+                    </button>
+                </p>
+            </form>
+        </div>
+    </body>
+</html>
