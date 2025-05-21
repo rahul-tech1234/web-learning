@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>fedback</title>
+    </head>
+    <body>
+        <!-- header area -->
+        <header>
+            <h1>Feedback</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="contact.html">Connect</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- //header area //-->
+        <!-- main area -->
+        <main>
+            <h2>Share Your Thoughts</h2>
+            <form action="#" method="get">
+                <section class="name">
+                    <label for="name">Name:</label><br />
+                    <input
+                        type="text"
+                        name="full-name"
+                        id="name"
+                        placeholder="Full Name"
+                    />
+                </section>
+                <section class="email">
+                    <label for="email">Email:</label><br />
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="email@domain.com"
+                    />
+                </section>
+                <section class="web">
+                    <label for="web">Website:</label><br />
+                    <input
+                        type="url"
+                        name="web-link"
+                        id="web"
+                        placeholder="http://site.com"
+                    />
+                </section>
+                <section class="phone">
+                    <label for="call">Phone:</label><br />
+                    <input
+                        type="tel"
+                        name="nmb"
+                        id="call"
+                        placeholder="10-digit phone"
+                        maxlength="10"
+                    />
+                </section>
+                <section class="age">
+                    <label for="age">Age:</label><br />
+                    <input type="number" name="age" id="age" />
+                </section>
+                <section class="date">
+                    <label for="date">Date:</label><br />
+                    <input type="datetime" name="date" id="date" />
+                </section>
+                <section class="time">
+                    <label for="time">Time:</label><br />
+                    <input type="datetime-local" name="time" id="time" />
+                </section>
+                <section class="week">
+                    <label for="week">Week:</label><br />
+                    <input type="week" name="week" id="week" />
+                </section>
+                <section class="color">
+                    <label for="color">Mood Colot</label><br />
+                    <input type="color" name="color" id="color" />
+                </section>
+                <section class="rank">
+                    <input type="range" name="rank" id="rank" value="50" />
+                </section>
+                <section class="int">
+                    <caption>
+                        Tech Interest:
+                    </caption>
+                    <br />
+                    <input type="radio" name="int" id="soft" value="1" />
+                    <label for="soft">Software</label><br />
+                    <input type="radio" name="int" id="hard" value="2" />
+                    <label for="hard">Hardware</label>
+                </section>
+                <section class="skill">
+                    <caption>
+                        Skills:
+                    </caption>
+                    <br />
+                    <input
+                        type="checkbox"
+                        name="skill"
+                        id="code"
+                        value="code"
+                    />
+                    <label for="code">Coding</label><br />
+                    <input
+                        type="checkbox"
+                        name="skill"
+                        id="design"
+                        value="design"
+                    />
+                    <label for="design">Design</label><br />
+                </section>
+                <section>
+                    <label for="region">Region</label><br />
+                    <input type="search" name="region" id="region" />
+                </section>
+                <section class="message">
+                    <label for="text">Comments:</label><br />
+                    <textarea
+                        name="message"
+                        id="text"
+                        cols="30"
+                        rows="5"
+                        placeholder="Sample feedback"
+                    ></textarea>
+                </section>
+                <section class="file">
+                    <label for="file">Progress</label><br />
+                    <progress value="60" max="100" min="0"></progress>
+                </section>
+                <section class="exp">
+                    <label for="exp">Progress</label><br />
+                    <meter
+                        id="exo"
+                        name="exp"
+                        low="20"
+                        high="80"
+                        max="100"
+                        value="81"
+                        optimum="85"
+                    ></meter>
+                </section>
+                <br />
+                <button type="submit" value="siccessfull">Submit</button>
+            </form>
+        </main>
+        <!-- //main area //-->
+        <!-- footer area -->
+        <!--// footer area //-->
+    </body>
+</html>
