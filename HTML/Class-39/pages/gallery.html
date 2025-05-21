@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>gallery</title>
+    </head>
+    <body>
+        <div>
+            <h1>Gallery</h1>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="form.html">Form</a></li>
+            </ul>
+            <h2>Gallery Form</h2>
+            <form action="">
+                <fieldset>
+                    <legend>Gallery Feedback</legend>
+                    <p>
+                        <label for="uname">Username:</label
+                        ><input
+                            type="text"
+                            name="uname"
+                            id="uname"
+                            placeholder="Enter your username"
+                        />
+                    </p>
+                    <p>
+                        <label for="email">Email</label
+                        ><input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Enter your email"
+                        />
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Rate Our Gallery</legend>
+                    <p>
+                        <label for="rate">Rating:</label
+                        ><input type="range" name="rate" id="rating" />
+                    </p>
+                    <p>
+                        <label for="fcolor">Favorite Color</label
+                        ><input type="color" name="fcolor" id="fcolor" />
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Event Date & Time</legend>
+                    <p>
+                        <label for="dt">Event Date & time</label>
+                        <input
+                            type="datetime-local"
+                            name="dt"
+                            id="dt"
+                            min="2025-02-01T14:00:00"
+                            max="2025-02-25T11:59:59"
+                        />
+                    </p>
+                    <p>
+                        <label for="date">Preferred Date:</label>
+                        <input
+                            type="date"
+                            name="date"
+                            id="date"
+                            min="2025-02-01"
+                            max="2025-02-20"
+                        />
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Options</legend>
+                    <p>
+                        <input
+                            type="checkbox"
+                            name="notification"
+                            id="notification"
+                            value="receive-notification"
+                        /><label for="notification">Receive Notification</label>
+                    </p>
+                    <p>
+                        <input
+                            type="radio"
+                            name="option"
+                            id="option-A"
+                            value="option-A"
+                        /><label for="option-A">Option-A</label>
+                    </p>
+                    <p>
+                        <input
+                            type="radio"
+                            name="option"
+                            id="option-B"
+                            value="option-B"
+                        /><label for="option-B">Option-B</label>
+                    </p>
+                </fieldset>
+                <br />
+                <button type="submit" value="log_in">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>

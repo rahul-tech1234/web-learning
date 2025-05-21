@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>contact</title>
+    </head>
+    <body>
+        <div>
+            <h1>Contact Us</h1>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+            <h2>Contact Form</h2>
+            <form action="">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <p>
+                        <label for="fname">Full Name:</label
+                        ><input
+                            type="text"
+                            name="fname"
+                            id="fname"
+                            placeholder="Enter your name"
+                        />
+                    </p>
+                    <p>
+                        <label for="email">Email:</label
+                        ><input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Enter your email"
+                        />
+                    </p>
+                    <p>
+                        <label for="phn">Phone:</label
+                        ><input
+                            type="tel"
+                            name="phn"
+                            id="phn"
+                            placeholder="Enter your phone number"
+                        />
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Prefered Contact Date</legend>
+                    <p>
+                        <label for="dt">Datetime</label
+                        ><input
+                            type="datetime-local"
+                            name="dt"
+                            id="dt"
+                            min="2025-02-01T01:10"
+                            max="2025-02-28T11:59"
+                        />
+                    </p>
+                    <p>
+                        <label for="date">Date</label
+                        ><input
+                            type="date"
+                            name="date"
+                            id="date"
+                            min="2024-09-01"
+                            max="2024-09-30"
+                            step="2"
+                        />
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Feedback</legend>
+                    <p>
+                        <label for="rating">Rating</label
+                        ><input type="range" name="rating" id="rating" />
+                    </p>
+                    <p>
+                        <label for="cpreference">Color Preference</label
+                        ><input type="color" name="color" id="cpreference" />
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Subscribe</legend>
+                    <input
+                        type="checkbox"
+                        name="subscribe"
+                        id="subscribe"
+                        value="news"
+                    /><label for="subscribe">Subscribe to Newsletter</label>
+                </fieldset>
+                <br />
+                <button type="submit" name="submit" value="submit">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </body>
+</html>
