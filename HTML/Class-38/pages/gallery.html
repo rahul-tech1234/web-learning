@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>form</title>
+    </head>
+    <body>
+        <div>
+            <h1>Gallery</h1>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="form.html">Form</a></li>
+            </ul>
+            <h2>Featured Image</h2>
+            <picture>
+                <source
+                    media="(max-width: 500px)"
+                    srcset="../assets/form/mobile.jpg"
+                />
+                <source
+                    media="(max-width: 800px)"
+                    srcset="../assets/gallery/tab.jpg"
+                />
+                <source
+                    media="(max-width: 1000px)"
+                    srcset="../assets/gallery/laptop.jpeg"
+                />
+                <img src="../assets/gallery/laptop.jpeg" alt="" />
+            </picture>
+        <form action="">
+            <label for="fname">Full Name:</label>
+            <input type="text" name="fname" id="fname" placeholder="Enter your full name"><br>
+            <label for="email">Email Address:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email"><br>
+            <label for="img-id">Favorite Image ID:</label>
+            <input type="url" name="img-id" id="img-id" placeholder="Enter image ID or URL"><br>
+            <caption>Image Type:</caption><br>
+            <input type="radio" name="type" id="landscape" value="landscape"><label for="landscape">Landscape</label><br>
+            <input type="radio" name="type" id="portrait" value="portrait"><label for="portrait">Portrait</label><br>
+            <caption>Choose Tags:</caption><br>
+            <input type="checkbox" name="tags" id="natural" value="natural"><label for="natural">Nature</label><br>
+            <input type="checkbox" name="tags" id="urban" value="urban"><label for="urban">Urban</label><br>
+            <label for="url">Search for Images:</label><input type="url" name="url" id="url" placeholder="Search images"><br>
+            <button type="submit" name="submit" value="submit">submit</button>
+            
+        </form>
+
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Class 38</title>
+    </head>
+    <body>
+        <div>
+            <h1>Welcome to our Website</h1>
+            <ul>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/gallery.html">Gallery</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+                <li><a href="pages/form.html">Form</a></li>
+            </ul>
+            <h2>Introduction</h2>
+            <p>
+                This is a <strong>dempn website</strong> designed for students.
+                You can learn <em>HTML concepts step by step</em>.Improtant
+                notes are <mark>highlighted</mark>,and
+                <strong>key terms are emphasized</strong>.Some changes
+                <del>are removed </del>while others <u>are inserted</u>
+            </p>
+            <h2>Topics Table</h2>
+            <table border="1">
+                <tr>
+                    <td colspan="2">Topics Covered</td>
+
+                    <td>Additional NOtes</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">HTML Basics</td>
+                    <td>Tags</td>
+                    <td rowspan="2">Core concepts</td>
+                </tr>
+                <tr>
+                    <td>Attributes</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Keep Practicing</td>
+                </tr>
+            </table>
+            <h2>Responsive Image</h2>
+            <picture>
+                <source srcset="assets/home/mobile.jpg" media="(max-width :600px)" />
+                <source srcset="assets/home/tab.jpg" media="(max-width :800px)" />
+                <source srcset="assets/home/laptop.jpg" media="(max-width :1000px)" />
+                <img src="assets/home/defolt.jpg" alt="missing picture" />
+            </picture>
+            <h3>Assignment Form</h3>
+            <form action="">
+                <label for="fname">Full Name:</label>
+                <input
+                    type="text"
+                    name="fname"
+                    id="fname"
+                    placeholder="Enter your full name"
+                /><br />
+                <label for="email">Email Address:</label>
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Enter your email"
+                /><br />
+                <label for="url">Your Website::</label>
+                <input
+                    type="url"
+                    name="url"
+                    id="url"
+                    placeholder="Enter your website url"
+                /><br />
+                <caption>
+                    Gender:
+                </caption>
+                <br />
+                <input
+                    type="radio"
+                    name="gender"
+                    id="male"
+                    value="male"
+                /><label for="male">Male</label><br />
+                <input
+                    type="radio"
+                    name="gender"
+                    id="female"
+                    value="female"
+                /><label for="female">Female</label><br />
+                <caption>
+                    Select your Interests:
+                </caption>
+                <br />
+                <input type="checkbox" name="interest" id="html" value="html" />
+                <label for="html">HTML</label><br />
+                <input type="checkbox" name="interest" id="css" value="css" />
+                <label for="css">CSS</label><br />
+                <label for="massage">Your Massage:</label>
+                <input
+                    type="search"
+                    name="massage"
+                    id="massage"
+                    placeholder="Search or write your mes"
+                /><br />
+                <button type="submit" name="submit" value="submit">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </body>
+</html>

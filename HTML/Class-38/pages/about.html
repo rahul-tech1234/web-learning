@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>about</title>
+    </head>
+    <body>
+        <div>
+            <h1>About Us</h1>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+            <h2>Our Mission</h2>
+            <p>
+                We want to provide high-quality tutorials for aspiring
+                <strong>web developers.</strong>We emphasize
+                <mark>practice- based learning</mark>to help you
+                <em>master core concepts.</em>
+            </p>
+            <h2>Responsive Image</h2>
+            <picture>
+                <source
+                    media="(max-width: 600px)"
+                    srcset="../assets/about/mobile.jpg"
+                />
+                <source
+                    media="(max-width: 900px)"
+                    srcset="../assets/about/tab.jpg"
+                />
+                <source
+                    media="(max-width: 1100px)"
+                    srcset="../assets/about/laptop.jpg"
+                />
+                <img src="../assets/about/main.png" alt="missing img" />
+            </picture>
+            <h3>Assignment Form</h3>
+            <form action="#">
+                <label for="fname">Full Name:</label>
+                <input
+                    type="text"
+                    name="fname"
+                    id="fname"
+                    value="Enter your full name"
+                /><br />
+                <label for="email">Email Address:</label>
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    value="Enter your email"
+                /><br />
+                <caption>
+                    Preferred Learning Style:
+                </caption>
+                <br />
+                <input
+                    type="radio"
+                    name="learning"
+                    id="visual"
+                    value="visual"
+                /><label for="visual">Visual</label><br />
+                <input
+                    type="radio"
+                    name="learning"
+                    id="hand"
+                    value="hands-on"
+                /><label for="hand">Hands-On</label><br />
+                <caption>
+                    Topics of interest:
+                </caption>
+                <br />
+                <input type="checkbox" name="topics" id="js" value="js" /><label
+                    for="js"
+                    >JavaScript</label
+                ><br />
+                <input
+                    type="checkbox"
+                    name="topics"
+                    id="php"
+                    value="php"
+                /><label for="php">PHP</label><br />
+                <label for="search">Comments:</label>
+                <input
+                    type="search"
+                    name="serch"
+                    id="search"
+                    placeholder="Your comments or feedback"
+                /><br />
+                <button type="submit" name="submit" value="submit">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </body>
+</html>

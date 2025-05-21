@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>form</title>
+    </head>
+    <body>
+        <div>
+            <h1>Form Assignment</h1>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+            <h2>Assignment form</h2>
+            <p>Complete the form below to test your knowledge of HTML forms</p>
+            <h2>Responsive Image</h2>
+            <picture>
+                <source
+                    media="(max-width: 500px)"
+                    srcset="../assets/form/mobile.webp"
+                />
+                <source
+                    media="(max-width: 800px)"
+                    srcset="../assets/form/tab.jpeg"
+                />
+                <source
+                    media="(min-width: 1000px)"
+                    srcset="../assets/form/laptop.webp"
+                />
+                <img src="../assets/form/laptop.webp" alt="" />
+            </picture>
+            <form action="">
+                <label for="fname">Full Name:</label>
+                <input
+                    type="text"
+                    name="fname"
+                    id="fname"
+                    placeholder="Enter your full name"
+                /><br />
+                <label for="email">Email Address:</label>
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Enter your email"
+                /><br />
+                <label for="password">Password:</label>
+                <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Create a password"
+                /><br />
+                <caption>
+                    Gender:
+                </caption>
+                <br />
+                <input
+                    type="radio"
+                    name="gender"
+                    id="mail"
+                    value="mail"
+                /><label for="mail">Mail</label><br />
+                <input type="radio" name="gender id="female"
+                value="female"><label for="female">Female</label><br />
+                <caption>
+                    Areas of Interest:
+                </caption>
+                <br />
+                <input
+                    type="checkbox"
+                    name="devoloper"
+                    id="f-dev"
+                    value="frontend"
+                /><label for="f-dev">Frontend Devolopers</label><br />
+                <input
+                    type="checkbox"
+                    name="devoloper"
+                    id="b-dev"
+                    value="backend"
+                /><label for="b-dev">Backend Devolopers</label><br />
+                <label for="url">Portfolio URL:</label
+                ><input
+                    type="url"
+                    name="url"
+                    id="url"
+                    placeholder="Enter your portfolio link"
+                /><br />
+                <button type="submit" name="submit" value="submit">
+                    submit
+                </button>
+            </form>
+        </div>
+    </body>
+</html>

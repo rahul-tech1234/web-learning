@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+</head>
+<body>
+    <div>
+        <h1>Contact Us</h1>     
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+        <h2>Get in Touch</h2>
+        <p>Feel free to contact us through the form below or reach out email or phone</p>
+        <h2>Our Official Location</h2>
+        <picture>
+            <source media="(max-width: 550px)" srcset="../assets/contact/mobile.jpeg">
+            <source media="(max-width: 850px)" srcset="../assets/contact/tab.jpg">
+            <source media="(max-width: 1050px)" srcset="../assets/contact/laptop.jpeg">
+            <img src="../assets/contact/laptop.jpeg" alt="">
+        </picture>
+        <h3>Contact Form</h3>
+        <form action="">
+            <label for="fname">Full Name:</label>
+            <input type="text" name="fname" id="fname" placeholder="Enter your full name"><br>
+            <label for="email">Email Address:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email"><br>
+            <label for="phn">Phone Number:</label>
+            <input type="tel" name="p-number" id="phn" placeholder="Enter your phone number"><br>
+            <caption>Preferred Contact Method:</caption><br>
+            <input type="radio" name="contact" id="email" value="email"><label for="email">Email</label><br>
+            <input type="radio" name="contact" id="phone" value="phone"><label for="phone">Phone</label><br>
+            <caption>Type of Query:</caption><br>
+            <input type="checkbox" name="quary" id="support" value="support"><label for="support">Support</label><br>
+            <input type="checkbox" name="quary" id="feedback" value="feedback"><label for="feedback">Feedback</label><br>
+            <label for="url">Your Website (Optional):</label><input type="url" name="url" id="url" placeholder="enter your website URL"><br>
+            <button type="submit" name="submit" value="submit">submit</button>
+            
+        </form>
+    </div>
+</body>
+</html>
