@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>form</title>
+    </head>
+    <body>
+        <!-- header area start -->
+        <header>
+            <h1>Submit Your Details</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="gellary.html">Gellary</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- /header area end -->
+        <!-- main area satart -->
+        <main>
+            <h2>Form Example</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="fname">Name:</label><br />
+                    <input
+                        type="text"
+                        name="name"
+                        id="fname"
+                        placeholder="Enter name"
+                    />
+                </p>
+                <p>
+                    <label for="email">Email:</label><br />
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Enter email"
+                        pattern="+@gmail.com"
+                    />
+                </p>
+                <p>
+                    <label for="web">Website:</label><br />
+                    <input
+                        type="url"
+                        name="web_link"
+                        id="web"
+                        placeholder="https://example.com"
+                    />
+                </p>
+                <p>
+                    <label for="phone">Phone</label><br />
+                    <input
+                        type="tel"
+                        name="num"
+                        id="phone"
+                        placeholder="1234567890"
+                    />
+                </p>
+                <p>
+                    <label for="age">Age:</label><br />
+                    <input type="number" name="age" id="age" />
+                </p>
+                <p>
+                    <label for="b_date">Birth Date</label><br />
+                    <input type="date" name="birth" id="b_date" />
+                </p>
+                <p>
+                    <label for="time">Event Time</label><br />
+                    <input type="datetime-local" name="Time" id="Time" />
+                </p>
+                <p>
+                    <label for="week">Week:</label><br />
+                    <input type="week" name="week" id="week" />
+                </p>
+                <p>
+                    <label for="color">Favorite Color:</label><br />
+                    <input type="color" name="color" id="color" />
+                </p>
+                <p>
+                    <label for="price">Satisfaction:</label><br />
+                    <input
+                        type="range"
+                        name="slide"
+                        id="price"
+                        min="0"
+                        max="100"
+                        value="50"
+                    />
+                </p>
+                <p>
+                    <caption>
+                        Gender:
+                    </caption>
+                    <br />
+                    <input
+                        type="radio"
+                        name="gender"
+                        id="male"
+                        value="male"
+                    /><label for="male">Male</label><br /><input
+                        type="radio"
+                        name="gender"
+                        id="female"
+                        value="female"
+                    /><label for="female">Female</label>
+                </p>
+                <p>
+                    <caption>
+                        Hobbies:
+                    </caption>
+                    <br />
+                    <input
+                        type="checkbox"
+                        name="hobbies"
+                        id="read"
+                        value="read"
+                    /><label for="read">Reading</label><br /><input
+                        type="checkbox"
+                        name="hobbies"
+                        id="game"
+                        value="game"
+                    /><label for="game">Gaming</label>
+                </p>
+                <p>
+                    <label for="city">City:</label><br />
+                    <input
+                        type="text"
+                        name="city"
+                        id="city"
+                        placeholder="Select or type"
+                    />
+                </p>
+                <p>
+                    <label for="mess">Message:</label>
+                    <br /><textarea
+                        name="message"
+                        id="mess"
+                        cols="50"
+                        rows="5"
+                        placeholder="This is readonly text."
+                        readonly
+                    ></textarea>
+                </p>
+                <p>
+                    <label for="progress">Progress:</label><br />
+                    <progress
+                        name="progress"
+                        id="progress"
+                        max="100"
+                        value="60"
+                    ></progress>
+                </p>
+                <p>
+                    <label for="meter">Meter:</label><br />
+                    <meter
+                        name="meter"
+                        id="meter"
+                        value="70"
+                        min="0"
+                        max="100"
+                        low="20"
+                        high="80"
+                    ></meter>
+                </p>
+                <button type="submit" name="submit" value="submit">Submit</button>
+            </form>
+            <hr />
+        </main>
+        <!-- /main area end -->
+
+        <!-- footer area start -->
+        <footer>
+            <h3>Form Image</h3>
+            <figure>
+                <picture>
+                    <source
+                        srcset="../assets/form/mobile.avif"
+                        media="(max-width :500px)"
+                    />
+                    <source
+                        srcset="../assets/form/tab.webp"
+                        media="(max-width :700px)"
+                    />
+                    <source
+                        srcset="../assets/form/laptop.webp"
+                        media="(max-width :1000px)"
+                    />
+                    <img src="../assets/form/main.webp" alt="image_here" />
+                </picture>
+                <figcaption>Form Image</figcaption>
+            </figure>
+            <h3>Form Features</h3>
+            <ul>
+                <li>Required fields</li>
+                <li>Validation with <var>pattern</var></li>
+            </ul>
+            <dl>
+                <dh
+                    >Form
+                    <dl>
+                        <dd>User input collection</dd>
+                    </dl>
+                </dh>
+            </dl>
+            <q>Forms are essential for interaction</q>
+            <h3>Code Example</h3>
+            <blockquote>
+                <input type="text" name="c_exam" id="c_exam" />
+            </blockquote>
+            <p>
+                Press Tab to move. Variable: <var>input</var>.Output:
+                <samp>Submitted.</samp>
+            </p>
+            <p>&#169; 2025 | <a href="../index.html">Home</a></p>
+        </footer>
+        <!-- /footer area end -->
+    </body>
+</html>

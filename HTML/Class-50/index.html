@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Class 50</title>
+    </head>
+    <body>
+        <div>
+            <header>
+                <!-- Header Area Start -->
+                <h1>Welcome to My Webside</h1>
+                <nav class="header-menu">
+                    <ul id="top">
+                        <li><a href="pages/about.html">About</a></li>
+                        <li><a href="pages/contact.html">Content</a></li>
+                        <li><a href="pages/gellary.html">Gallery</a></li>
+                        <li><a href="pages/form.html">Form</a></li>
+                    </ul>
+                </nav>
+                <h2>Introduction</h2>
+                <p>
+                    this is the <mark>home page</mark> of the assignment.It uses
+                    <strong>all HTML topics</strong> taught so far
+                </p>
+                <p>Here's a <br />line break and an horizontal rulebelow:</p>
+                <hr />
+            </header>
+            <!-- /Header Area End -->
+            <!-- Main area start -->
+            <main>
+                <section class="link-area">
+                    <h3>Quick links</h3>
+                    <p>jump to: <a href="#bottom">Bottom of Page</a></p>
+                    <p>
+                        External Links:
+                        <a href="https://www.google.com">Google</a>|<a
+                            href="https://flipkart.com"
+                            >Flipkart</a
+                        >
+                    </p>
+                </section>
+                <section class="demo-list">
+                    <h3>Lists Demo</h3>
+                    <nav class="list-item">
+                        <ul>
+                            <li>Unordered Item 1</li>
+                            <li>
+                                Unordered Item 2
+                                <ol>
+                                    <li>Nested ordered Item 1</li>
+                                    <li>Nested ordered Item 2</li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="web">
+                        <dl>
+                            <dh>
+                                HTML
+                                <dl>
+                                    <dd>HyperText Markup Language</dd>
+                                </dl>
+                            </dh>
+                            <dt>
+                                CSS
+                                <dl>
+                                    <dd>Cascading Style Sheets</dd>
+                                </dl>
+                            </dt>
+                        </dl>
+                    </nav>
+                </section>
+                <figure>
+                    <h4>Image</h4>
+                    <picture>
+                        <source
+                            srcset="
+                                ../assets/home/mobile.avif,
+                                ../assets/home/mobile.webp
+                            "
+                            media="(max-width :500px)"
+                        />
+                        <source
+                            srcset="../assets/home/photo.webp"
+                            media="(max-width :850px)"
+                        />
+                        <source
+                            srcset="
+                                ../assets/home/laptop.avif,
+                                ../assets/home/laptop.webp
+                            "
+                            media="(max-width :1000px)"
+                        />
+
+                        <img
+                            src="https://picsum.photos/id/870/200/300?grayscale&blur=2"
+                            alt=""
+                        />
+                    </picture>
+                    <figcaption>Image from Picsum</figcaption>
+                </figure>
+                <section>
+                    <h2>Text Formatting</h2>
+                    <p>
+                        This is <b>bold,</b><i>italic,</i
+                        ><strong>improtant,</strong>and
+                        <em>emphasized</em> text.
+                    </p>
+                    <p>
+                        <del>Old text </del>replaced with <u>new text</u>.
+                        H<sub>2</sub>o and x<sup>2</sup>.
+                    </p>
+                    <p><small>small text here</small></p>
+                </section>
+                <section>
+                    <samp>This is a paragraph</samp>
+                    <p>
+                        press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save.Variable:
+                        <var>x.</var> Output:<samp>Hello.</samp>
+                    </p>
+                </section>
+                <section>
+                    <h3>Table Demo</h3>
+                    <table border="2">
+                        <tr>
+                            <th>Name</th>
+                            <th colspan="2">Details</th>
+                        </tr>
+                        <tr>
+                            <td>John</td>
+                            <td>Age:25</td>
+                            <td>City: NY</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">End of Table</td>
+                        </tr>
+                    </table>
+                </section>
+            </main>
+            <!-- /Main area End -->
+            <!-- Aside Area Start -->
+            <aside>
+                <h4>Aside Content</h4>
+                <p>This is a <q>short quote</q>in an aside.</p>
+                <p>&#169;2025 My Website |<a href="#top">Back to top</a></p>
+            </aside>
+            <!-- /Aside Area Start -->
+        </div>
+    </body>
+</html>

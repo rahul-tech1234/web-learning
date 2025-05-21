@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>gellary</title>
+    </head>
+    <body>
+        <!-- header area start -->
+        <header>
+            <h1>Image Gallery</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="form.html">Form</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- /header area end -->
+        <!-- main area start -->
+        <main>
+            <h2>Our Images</h2>
+            <p>Here are some <mark>beautiful</mark>images form Picsum:</p>
+            <!-- Responsive Image -->
+            <figure>
+                <picture>
+                    <source
+                        srcset="../assets/gellary/mobile.webp"
+                        media="(max-width :500px)"
+                    />
+                    <source
+                        srcset="
+                            ../assets/gellary/tab.avif,../assets/gellary/tab.jpeg
+                        "
+                        media="(max-width :700px"
+                    />
+                    <source
+                        srcset="
+                            ../assets/gellary/laptop.avif,../assets/gellary/laptop.jpeg
+                        "
+                        media="(max-width :1000px)"
+                    />
+                    <img
+                        src="../assets/gellary/main.avif"
+                        alt=""
+                        width="400px"
+                    /> </picture
+                ><br />
+                <picture>
+                    <source
+                        srcset="../assets/gellary/mobile.avif"
+                        media="(max-width :500px"
+                    />
+                    <source
+                        srcset="../assets/gellary/tab.webp"
+                        media="(max-width :700px)"
+                    />
+                    <source
+                        srcset="../assets/gellary/laptop(2).webp"
+                        media="(max-width :900px)"
+                    />
+                    <img
+                        src="../assets/gellary/main(2).avif"
+                        alt=""
+                        width="400px"
+                    />
+                </picture>
+            </figure>
+            <!-- Responsive Image -->
+            <hr />
+            <figure>
+                <h3>Image Map</h3>
+                <!-- Image Map Generated -->
+                <img
+                    src="../assets/gellary/img_map.avif"
+                    alt=""
+                    usemap="#map_img"
+                />
+                <map name="map_img">
+                    <area
+                        target="_blank"
+                        alt=""
+                        title=""
+                        href="https://en.wikipedia.org/wiki/Human"
+                        coords="245,288,248,263,253,234,259,204,260,176,265,138,272,119,302,96,310,123,318,145,303,166,293,177,289,236,291,285"
+                        shape="poly"
+                    />
+                    <area
+                        target="_blank"
+                        alt=""
+                        title=""
+                        href="https://en.wikipedia.org/wiki/Passport"
+                        coords="112,138,155,131,168,193,126,201"
+                        shape="poly"
+                    />
+                    <area
+                        target="_blank"
+                        alt=""
+                        title=""
+                        href="https://en.wikipedia.org/wiki/Laptop"
+                        coords="1,106,26,130,33,105,51,103,74,112,92,132,151,74,183,39,163,18,143,1,63,3,3,2"
+                        shape="poly"
+                    />
+                    <area
+                        target="_blank"
+                        alt=""
+                        title=""
+                        href="https://en.wikipedia.org/wiki/Sunglasses"
+                        coords="349,139,391,187,382,205,359,195,365,175,348,174,335,154"
+                        shape="poly"
+                    />
+                    <area
+                        target="_blank"
+                        alt=""
+                        title=""
+                        href="https://en.wikipedia.org/wiki/Tea"
+                        coords="32,156,34,134,37,118,58,110,73,124,84,137,72,151"
+                        shape="poly"
+                    />
+                    <area
+                        target="_blank"
+                        alt=""
+                        title=""
+                        href="https://en.wikipedia.org/w/index.php?fulltext=1&amp;profile=default&amp;search=camera&amp;title=Special:Search&amp;ns0=1"
+                        coords="250,5,271,29,261,45,286,63,301,47,307,41,323,44,329,32,318,18,303,5,281,0"
+                        shape="poly"
+                    />
+                </map>
+
+                <!-- Image Map Generated -->
+            </figure>
+        </main>
+        <!-- /main area end -->
+        <!-- Img list -->
+        <h3>List of Images</h3>
+
+        <ol>
+            <li><a href="https://www.pexels.com/">Image 1</a></li>
+            <li><a href="https://picsum.photos/images">Image 2</a></li>
+        </ol>
+        <!-- Img list -->
+        <dl>
+            <dh
+                >Picsum
+                <dl>
+                    <dd>Random image generator</dd>
+                </dl>
+            </dh>
+        </dl>
+        <h3>Code images</h3>
+        <img src="../assets/contact/main.webp" alt="" />
+        <p>
+            press <kbd>F5</kbd> to refresh. Variable: <var>img</var>.Output:
+            <samp>Loaded</samp>.
+        </p>
+        <h3>Image Info</h3>
+        <!-- Table -->
+        <table border="2">
+            <tr>
+                <th>Image</th>
+                <th>Details</th>
+            </tr>
+            <tr>
+                <td>Image 1</td>
+                <td>300x200</td>
+            </tr>
+            <tr>
+                <td colspan="2">End</td>
+            </tr>
+        </table>
+        <!-- Table -->
+        <q>Images make websites lively.</q>
+        <!-- footer -->
+        <footer>
+            <p>&#169; 2025 | <a href="../index.html">Home</a></p>
+        </footer>
+        <!-- footer -->
+    </body>
+</html>
