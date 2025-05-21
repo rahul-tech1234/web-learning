@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>form</title>
+    </head>
+    <body>
+        <div>
+            <h1>HTML forms</h1>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+            <h2>form Demonstration</h2>
+            <p>
+                learn to use
+                <strong>text inputs</strong>,<em>checkboxes</em>,<strong
+                    >radio buttons</strong
+                >,and more with this form example.
+            </p>
+            <h2>Responsive Image</h2>
+            <picture>
+                <source
+                    srcset="../assets/form/mobile.jpg"
+                    media="(max-width :550px)"
+                />
+                <source
+                    srcset="../assets/form/tab.jpeg"
+                    media="(max-width :800px)"
+                />
+                <source
+                    srcset="../assets/form/laptop.jpg"
+                    media="(max-width :1000px)"
+                />
+                <img src="../assets/form/desktop.jpeg" alt="photo" />
+            </picture>
+            <form action="">
+                <h3>Assignment form</h3>
+                <label for="uname">User Name:</label>
+                <input
+                    type="text"
+                    name="uname"
+                    id="uname"
+                    placeholder="Enter your username"
+                /><br />
+                <label for="password">Password:</label>
+                <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Enter your password"
+                />
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <input type="radio" name="gender" id="male" value="male" />
+                    <label for="male">Male</label><br />
+                    <input
+                        type="radio"
+                        name="gender"
+                        id="female"
+                        value="female"
+                    />
+                    <label for="female">Female</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Select Your Interest:</legend>
+                    <input
+                        type="checkbox"
+                        name="interest"
+                        id="html"
+                        value="html"
+                    />
+                    <label for="html">HTML</label><br />
+                    <input
+                        type="checkbox"
+                        name="interest"
+                        id="css"
+                        value="css"
+                    />
+                    <label for="css">CSS</label>
+                </fieldset>
+                <input type="submit" value="Submit" />
+            </form>
+        </div>
+    </body>
+</html>

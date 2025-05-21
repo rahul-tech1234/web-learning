@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>contact</title>
+    </head>
+    <body>
+        <div>
+            <h1>Contact Us</h1>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="form.html">Form</a></li>
+            </ul>
+            <h2>Get in Touch</h2>
+            <p>
+                Fell free to reach out to us for any queries or support. We are
+                here to assist you with <strong>HTML learning</strong>,<mark
+                    >programming challenges</mark
+                >,and more.
+            </p>
+            <h2>Responsive Image</h2>
+            <picture>
+                <source
+                    srcset="../assets/contact/mobile.jpg"
+                    media="(max-width :500px)"
+                />
+                <source
+                    srcset="../assets/contact/tablet.jpg"
+                    media="(max-width :800px)"
+                />
+                <source
+                    srcset="../assets/contact/laptop.jpeg"
+                    media="(max-width :1000px)"
+                />
+                <img src="../assets/contact/laptop.jpeg" alt="img-images" />
+            </picture>
+            <form action="">
+                <h3>Assignment Form</h3>
+                <label for="yname">Your Name:</label>
+                <input
+                    type="text"
+                    name="yname"
+                    id="yname"
+                    placeholder="Enter your name"
+                /><br />
+                <label for="email-add">Email Address:</label>
+                <input
+                    type="email"
+                    name="email"
+                    id="email-add"
+                    placeholder="Enter your email"
+                />
+                <fieldset>
+                    <legend>Reason for Contact:</legend>
+                    <input
+                        type="radio"
+                        name="contact"
+                        id="feedback"
+                        value="feedback"
+                    />
+                    <label for="feefback">Feedback</label><br />
+                    <input
+                        type="radio"
+                        name="contact"
+                        id="support"
+                        value="support"
+                    />
+                    <label for="support">Support</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Contact Preferences</legend>
+                    <input
+                        type="checkbox"
+                        name="media"
+                        id="email"
+                        value="email"
+                    />
+                    <label for="email">Email</label><br />
+                    <input
+                        type="checkbox"
+                        name="media"
+                        id="phone"
+                        value="phone"
+                    />
+                    <label for="phone">Phone</label>
+                </fieldset>
+                <input type="submit" value="Submit" />
+            </form>
+        </div>
+    </body>
+</html>

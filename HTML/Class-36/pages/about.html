@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>about</title>
+    </head>
+    <body>
+        <div>
+            <h1>About Us</h1>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="form.html">Form</a></li>
+            </ul>
+            <h2>Our mission</h2>
+            <p>
+                We aim to teach HTML in a structured, engaging way.Form
+                <strong>basics</strong> to <mark>advanced topics</mark>,our
+                lessons cater to all levels. learn via
+                <strong>real-world-examples</strong>.
+            </p>
+            <h2>Responsive Image</h2>
+            <picture>
+                <source
+                    srcset="
+                        ../assets/about/mobile-about.avif,
+                        ../assets/about/mobile-about.webp,
+                        ../assets/about/mobile-about.jpg,
+                        ../assets/about/mobile-about.png
+                    "
+                    media="(max-width :500px)"
+                />
+                <source
+                    srcset="
+                        ../assets/about/tab-about.avif,
+                        ../assets/about/tab-about.webp,
+                        ../assets/about/tab-about.jpg,
+                        ../assets/about/tab-about.png
+                    "
+                    media="(max-width :800px)"
+                />
+                <source
+                    srcset="
+                        ../assets/about/laptop-about.avif,
+                        ../assets/about/laptop-about.webp,
+                        ../aasets/about/laptop-jepg,
+                        ../assets/about/laptop-about.png
+                    "
+                    media="(max-width :1000px)"
+                />
+                <img src="../assets/about/laptop-about.jpeg" alt="img-here" />
+            </picture>
+            <h3>Form assignment</h3>
+            <form action="">
+                <label for="fname">Full Name:</label>
+                <input
+                    type="text"
+                    name="fullname"
+                    class="fname"
+                    id="fname"
+                    placeholder="Your full name"
+                />
+                <br />
+                <label for="pbio">Bio:</label>
+                <input
+                    type="bio"
+                    id="pbio"
+                    name="pbio"
+                    placeholder="short bio"
+                />
+                <fieldset>
+                    <legend>Select your skill set:</legend>
+                    <input
+                        type="checkbox"
+                        name="skill"
+                        id="coding"
+                        value="coding"
+                    />
+                    <label for="coding">Coding</label>
+                    <br />
+                    <input
+                        type="checkbox"
+                        name="skill"
+                        id="design"
+                        value="design"
+                    />
+                    <label for="design">Design</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Experience level:</legend>
+                    <input
+                        type="radio"
+                        name="Experience"
+                        id="beginner"
+                        value="beginner"
+                    />
+                    <label for="beginner">Biginner</label>
+                    <br />
+                    <input
+                        type="checkbox"
+                        name="Experience"
+                        id="advanced"
+                        value="beginner"
+                    />
+                    <label for="advanced">Advanced</label>
+                </fieldset>
+                <input type="submit" value="Submit" />
+            </form>
+        </div>
+    </body>
+</html>

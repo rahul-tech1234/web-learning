@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Class 36</title>
+    </head>
+    <body>
+        <div>
+            <h1>Welcome to Our Website</h1>
+            <ul>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/gallery.html">Gallery</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+                <li><a href="pages/form.html">Form</a></li>
+            </ul>
+            <h2>HTML learning Path</h2>
+            <p>
+                This site provides step-by-step tutorials on HTML.Learn to use
+                <strong>tags</strong>, <em>attributes</em>,
+                <strong>formatting</strong>,and more.Key topics include
+                <mark>HTML basics</mark>,<u>styling</u>,and
+                <del>depreeated elements</del>.
+            </p>
+            <h2>Responsive Image Example</h2>
+            <picture>
+                <source
+                    srcset="
+                        assets/Index/mobile-img.avif,
+                        assets/Index/mobile-img.webp,
+                        assets/Index/mobile-img.jpg
+                    "
+                    media="(max-width :500px)"
+                />
+                <source
+                    srcset="
+                        assets/Index/tablet.avif,
+                        assets/Index/tablet.webp,
+                        assets/Index/tablet.jpg
+                    "
+                    media="(max-width :800px)"
+                />
+                <source
+                    srcset="
+                        assets/Index/laptop.avif,
+                        assets/Index/laptop.webp,
+                        assets/Index/laptop.jpeg
+                    "
+                    media="(max-width :1000px)"
+                />
+                <img src="assets/Index/laptop.jpeg" alt="img" />
+            </picture>
+            <h2>Assignment form</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="sname">Username</label>
+                    <input
+                        type="text"
+                        name="uname"
+                        id="uname"
+                        placeholder="Enter your Username"
+                        spellcheck="true"
+                    />
+                </p>
+                <p>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password"
+                    placeholder="Enter your password spellcheck="true" />
+                    <input type="hidden" name="token" value="123" />
+                </p>
+                <fieldset>
+                    <legend>Chose Your learning topics:</legend>
+                    <p>
+                        <input
+                            type="checkbox"
+                            name="toics"
+                            id="html"
+                            value="html basics"
+                        />
+                        <label for="html">HTML Basics</label>
+                    </p>
+                    <p>
+                        <input
+                            type="checkbox"
+                            name="toics"
+                            id="text"
+                            value="text formatting"
+                        />
+
+                        <label for="text">Text Formatting</label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Preferred Learning Style</legend>
+                    <p>
+                        <input
+                            type="radio"
+                            name="learning-style"
+                            id="visual"
+                            value="visual"
+                        /><label for="visual">Visual</label>
+                    </p>
+                    <p>
+                        <input
+                            type="radio"
+                            name="learning-style"
+                            id="textual"
+                            value="textual"
+                        /><label for="textual">Textual</label>
+                    </p>
+                </fieldset>
+                <input type="submit" value="Submit" />
+            </form>
+        </div>
+    </body>
+</html>
