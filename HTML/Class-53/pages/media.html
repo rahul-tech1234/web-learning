@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>media</title>
+    </head>
+    <body>
+        <!-- Header Start -->
+        <header>
+            <h1>Media Gallery</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="servey.html">Servey</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Header End -->
+        <!-- Main Start -->
+        <main>
+            <!-- Aside Start -->
+            <aside>
+                <h2>Explore Media</h2>
+                <p>
+                    Enjoy our <mark>curated</mark> collection of
+                    <steong>learning media.</steong>
+                </p>
+                <figure>
+                    <picture>
+                        <source
+                            src="../assets/imaes/media/mobile.avif"
+                            media="(max-width :550px)"
+                        />
+                        <source
+                            src="../assets/imaes/media/tab.avif"
+                            media="(max-width :800px)"
+                        />
+                        <source
+                            src="../assets/imaes/media/holly.avif"
+                            media="(max-width :1100px)"
+                        />
+                        <img
+                            src="../assets/imaes/media/holly.avif"
+                            alt="img not supported"
+                        />
+                    </picture>
+                    <figcaption>Responsive Image</figcaption>
+                </figure>
+                <figure>
+                    <video controls src="../assets/imaes/video/video.mp4">
+                        <source
+                            src="../assets/imaes/video/video.mp4"
+                            type="mp4"
+                        />
+                        <source src="" type="" />
+                        <source src="" type="" />
+                    </video>
+                    <figcaption>Learning Video</figcaption>
+                </figure>
+                <figure>
+                    <audio
+                        controls
+                        autoplay
+                        muted
+                        src="../assets/imaes/audio/horse.ogv"
+                    >
+                        <source
+                            src="../assets/imaes/audio/horse.ogv"
+                            type="audio/ogv"
+                        />
+                        <source src="" type="" />
+                        <source src="" type="" />
+                    </audio>
+                    <figcaption>Background Audio(Looping)</figcaption>
+                </figure>
+            </aside>
+            <hr />
+            <!-- Aside End -->
+            <!-- Map Img Start -->
+            <section>
+                <h3>Image Map</h3>
+                <img
+                    src="../assets/imaes/media/map.avif"
+                    alt="img-here"
+                    usemap="#mapping-img"
+                />
+                <map name="mapping-img">
+                    <area
+                        target="_blank"
+                        alt="Burj-Khalifa"
+                        title="Burj-Khalifa"
+                        href="https://www.burjkhalifa.ae/"
+                        coords="399,31,442,18,459,78,467,215,479,357,425,377,373,371,369,263"
+                        shape="poly"
+                    />
+                    <area
+                        target="_blank"
+                        alt=" Dubai-Sea-Beach"
+                        title=" Dubai-Sea-Beach"
+                        href="https://www.marriott.com/offers/epicurean-escape-off-145887/rktrz-the-ritz-carlton-ras-al-khaimah-al-hamra-beach?propertycode=rktrz&amp;gad_source=1&amp;gclid=Cj0KCQjw7dm-BhCoARIsALFk4v_aplgw_adRICjmHTjruyOJINsS7v-tXN0IJqKDIxydENAUFikpVUYaAipLEALw_wcB"
+                        coords="6,386,1178,394,1171,740,7,745"
+                        shape="poly"
+                    />
+                    <area
+                        target="_blank"
+                        alt="Mumbai"
+                        title="Mumbai"
+                        href="https://www.mumbaiindians.com/"
+                        coords="763,130,985,113,1015,346,764,382"
+                        shape="poly"
+                    />
+                    <area
+                        target="_blank"
+                        alt="Landon"
+                        title="Landon"
+                        href="https://www.visitlondon.com/"
+                        coords="1049,151,1041,388,1160,373,1159,145"
+                        shape="poly"
+                    />
+                    <area
+                        target="_blank"
+                        alt="Paric"
+                        title="Paric"
+                        href="https://www.thetravelingtwin.com/destinations/france/what-to-do-with-24-hours-in-paris?gad_source=1&amp;gclid=Cj0KCQjw7dm-BhCoARIsALFk4v9s36PGlMaNP5JPA66ZzrHL12bQ7IB1HHCvxQ3U3wo8Zz5rvd3DG-4aApeVEALw_wcB#google_vignette"
+                        coords="112,274,325,255,356,379,122,378"
+                        shape="poly"
+                    />
+                </map>
+            </section>
+            <!-- Map Img Start -->
+            <!-- List Start -->
+            <section>
+                <h3>Media List</h3>
+                <nav>
+                    <ol>
+                        <li><a href="">Image Sample</a></li>
+                        <li><a href="">Video Sample</a></li>
+                    </ol>
+                    <dl>
+                        <dh
+                            >Media
+                            <dl>
+                                <dd>Visual and audio content</dd>
+                            </dl>
+                        </dh>
+                    </dl>
+                </nav>
+            </section>
+            <!-- List End -->
+            <!-- Table Start -->
+            <section>
+                <h3>Media Code</h3>
+                <pre>
+                    <code><kbd><</kbd>audio controls><kbd><</kbd>source src="audio.mp3"><kbd><</kbd>/audio></code>
+                </pre>
+                <p>
+                    Use Space to play.Variable: <var>sound</var>.Output:
+                    <samp>Playing</samp>.
+                </p>
+                <h3>Media State</h3>
+                <table border="1">
+                    <tr>
+                        <th>Type</th>
+                        <th>Count</th>
+                    </tr>
+                    <tr>
+                        <td>Images</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Video</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Total: 8</td>
+                    </tr>
+                </table>
+            </section>
+            <!-- Table End -->
+        </main>
+        <!-- Main End -->
+        <!-- Footer Start -->
+        <footer>
+            <q>Media inspires learning.</q>
+            <p>&#169;2025 | <a href="../index.html">Home</a></p>
+        </footer>
+        <!-- Footer End -->
+    </body>
+</html>

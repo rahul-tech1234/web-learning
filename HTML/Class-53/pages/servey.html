@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>servey</title>
+    </head>
+    <body>
+        <!-- Header Start -->
+        <header>
+            <h1>Leraning Servey</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="media.html">Media</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Header End -->
+        <!-- Main Area Start -->
+        <main>
+            <h2>Your Feedback</h2>
+            <form action="#" method="get">
+                <p>
+                    <label for="fname">Full Name:</label><br />
+                    <input
+                        type="text"
+                        name="name"
+                        id="fname"
+                        placeholder="Your Name"
+                    />
+                </p>
+                <p>
+                    <label for="email">Email:</label><br />
+                    <input
+                        type="email"
+                        name="Email"
+                        id="email"
+                        placeholder="You@example.com"
+                    />
+                </p>
+                <p>
+                    <label for="url">Website:</label><br />
+                    <input
+                        type="url"
+                        name="web"
+                        id="url"
+                        placeholder="http://your-site.com"
+                    />
+                </p>
+                <p>
+                    <label for="nmb">Phone:</label><br />
+                    <input
+                        type="tel"
+                        name="nmd"
+                        id="nmd"
+                        placeholder="10-digit number"
+                    />
+                </p>
+                <p>
+                    <label for="age">Age:</label><br />
+                    <input type="number" name="age" id="age" />
+                </p>
+                <p>
+                    <label for="sdate">Start Date:</label><br />
+                    <input type="date" name="sdate" id="sdate" />
+                </p>
+                <p>
+                    <label for="etime">Event Time:</label><br />
+                    <input type="datetime-local" name="etime" id="etime" />
+                </p>
+                <p>
+                    <label for="week">Preferred Week:</label><br />
+                    <input type="week" name="week" id="week" />
+                </p>
+                <p>
+                    <label for="color">Favorite Color:</label><br />
+                    <input type="color" name="color" id="color" />
+                </p>
+                <p>
+                    <label for="rate">Ratting(0-10):</label><br />
+                    <input
+                        type="range"
+                        name="rate"
+                        id="rate"
+                        value="5"
+                        max="10"
+                        step="1"
+                    />
+                </p>
+                <p>
+                    <caption>
+                        Experience Level:
+                    </caption>
+                    <br />
+                    <input
+                        type="radio"
+                        name="position"
+                        id="fast"
+                        value="biginner"
+                    />
+                    <label for="fast">Beginner</label><br />
+                    <input
+                        type="radio"
+                        name="position"
+                        id="last"
+                        value="advanced"
+                    />
+                    <label for="last">Advanced</label>
+                </p>
+                <p>
+                    <caption>
+                        Interests:
+                    </caption>
+                    <br />
+                    <input
+                        type="checkbox"
+                        name="interest"
+                        id="code"
+                        value="code"
+                    />
+                    <label for="code">Coding</label><br />
+                    <input
+                        type="checkbox"
+                        name="interest"
+                        id="design"
+                        value="design"
+                    />
+                    <label for="design">Design</label>
+                </p>
+                <input type="search" name="nm" id="" />
+                <p>
+                    <label for="cntry">Country:</label><br />
+                    <input
+                        type="search"
+                        name="cntry"
+                        id="cntry"
+                        list="country-list"
+                    />
+                    <datalist id="country-list">
+                        <option value="1">Bangladesh</option>
+                        <option value="2">India</option>
+                        <option value="3">USA</option>
+                        <option value="4">UK</option>
+                    </datalist>
+                </p>
+                <p>
+                    <label for="msg">Feedback:</label><br />
+                    <textarea
+                        name="msg"
+                        id="msg"
+                        cols="10"
+                        rows="3"
+                        value="sample text"
+                    ></textarea>
+                </p>
+                <p>
+                    <label for="comp">Completion:</label><br />
+                    <progress
+                        name="file"
+                        id="comp"
+                        value="80"
+                        max="100"
+                    ></progress>
+                </p>
+                <p>
+                    <label for="satic">Satisfaction:</label><br />
+                    <meter
+                        name="satic"
+                        id="satic"
+                        min="0"
+                        max="100"
+                        low="20"
+                        high="80"
+                        optimum="83"
+                        value="90"
+                    ></meter>
+                </p>
+                <button type="submit" name="sub" value="success">Send</button>
+            </form>
+            <hr />
+            <!-- Img/Video/Aduio -->
+            <section>
+                <h3>Survey Media</h3>
+                <figure>
+                    <picture>
+                        <source
+                            srcset="../assets/imaes/servey/mobile.avif"
+                            media="(max-width :500px)"
+                        />
+                        <source
+                            srcset="../assets/imaes/servey/tab.avif"
+                            media="(max-width :800px)"
+                        />
+                        <source
+                            srcset="../assets/imaes/servey/laptop.avif"
+                            media="(max-width :1000px)"
+                        />
+                        <img
+                            src="../assets/imaes/servey/laptop.avif"
+                            alt="img not support"
+                        />
+                    </picture>
+                    <figcaption>Survey Visual</figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <video
+                            controls
+                            src="../assets/imaes/video/video.mp4"
+                            poster="../assets/imaes/video/thamb.avif"
+                            loop
+                        >
+                            <source src="" type="" />
+                            <source src="" type="" />
+                            <source src="" type="" />
+                            <img src="" alt="video not support" />
+                        </video>
+                    </picture>
+                    <figcaption>Survey Video</figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <audio src="../assets/imaes/audio/horse.ogv" controls>
+                            <source src="" type="" />
+                            <source src="" type="" />
+                            <source src="" type="" />
+                        </audio>
+                    </picture>
+                    <figcaption>Survey Audio(Autoplay)</figcaption>
+                </figure>
+            </section>
+            <!-- Aside Start-->
+            <aside>
+                <h3>Survey Details</h3>
+                <nav>
+                    <ul>
+                        <li>Questions</li>
+                        <li>
+                            Responses
+                            <ol>
+                                <li>Text</li>
+                                <li>Choices</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <dl>
+                        <dh
+                            >Survey
+                            <dl>
+                                <dd>Collect feedback</dd>
+                            </dl>
+                        </dh>
+                    </dl>
+                </nav>
+                <h3>Form Code</h3>
+                <pre>
+                    <code>
+                        <kbd><</kbd>form><kbd><</kbd> input type="text"><kbd><</kbd>/form>
+                    </code>
+                </pre>
+                <p>
+                    Use <kbd>ctrl</kbd> + <kbd>s</kbd> to save. Variable:
+                    <var>form</var>.Output: <samp>Saved</samp>.
+                </p>
+            </aside>
+            <!-- Aside End-->
+            <!-- Img/Video/Aduio -->
+        </main>
+
+        <!-- Main Area End -->
+        <!-- Footer Start -->
+        <footer>
+            <p>&#169;2025 | <a href="../index.html">Home</a></p>
+        </footer>
+        Footer End
+    </body>
+</html>
