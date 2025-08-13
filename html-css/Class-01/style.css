@@ -1,0 +1,43 @@
+body {
+    font-family: sans-serif;
+}
+.product-area {
+    border: 3px solid #000; 
+}
+img {
+    width: 200px;
+    height: 200px;
+}
+.product-area .product-title {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.product-area .product-price {
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.product-area .shiping-details {
+    font-weight: bold;
+    font-size: 18px;
+    color: #8e6767; 
+}
+.product-area ul {
+    list-style: circle;
+    font-weight: bold;
+}
+
+.product-area ul li {
+    color: #c38e8e ; 
+}
+
+.product-area .product-buy a, 
+.product-area .product-buy a:link, 
+.product-area .product-buy a:hover, 
+.product-area .product-buy a:visited, 
+.product-area .product-buy a:active {
+    background: #5858cf;
+    color: #fff;
+    text-decoration: none;
+} 
